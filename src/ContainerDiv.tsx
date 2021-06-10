@@ -3,7 +3,7 @@ import color from "color";
 
 const useStyles = (c: string, blur: number) =>
   makeStyles(() => ({
-    glass: {
+    div: {
       backgroundColor: color(c).alpha(0.7).toString(),
       backgroundImage: `linear-gradient(to bottom right, ${color(c)
         .alpha(0.2)
@@ -30,7 +30,7 @@ export function ContainerDiv(props: ContainerDivProps) {
 
   return (
     <Box
-      className={classes.glass}
+      className={classes.div}
       {...rest}
     />
   );
